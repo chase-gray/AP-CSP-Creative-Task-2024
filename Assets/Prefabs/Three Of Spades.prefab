@@ -11,7 +11,6 @@ GameObject:
   - component: {fileID: 5023396054385918641}
   - component: {fileID: 3821508883822505616}
   - component: {fileID: 6231623162001161291}
-  - component: {fileID: 7487944894347313859}
   m_Layer: 0
   m_Name: Three Of Spades
   m_TagString: Untagged
@@ -84,17 +83,3 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!114 &7487944894347313859
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 694379125326242880}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d279f6d8459546945be7d3ed01e83699, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  value: 3
-  aceValue: 3

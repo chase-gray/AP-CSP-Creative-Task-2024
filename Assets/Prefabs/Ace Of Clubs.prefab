@@ -11,7 +11,6 @@ GameObject:
   - component: {fileID: 5272191775063561660}
   - component: {fileID: 4780740013308407972}
   - component: {fileID: 7906792322429874695}
-  - component: {fileID: 8624074868438915331}
   m_Layer: 0
   m_Name: Ace Of Clubs
   m_TagString: Untagged
@@ -84,17 +83,3 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!114 &8624074868438915331
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7159221804416849260}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d279f6d8459546945be7d3ed01e83699, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  value: 1
-  aceValue: 11
