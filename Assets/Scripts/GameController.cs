@@ -1,58 +1,78 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 using Random = UnityEngine.Random;
+using TMPro;
 
-public enum GameState { DealerTurn, PlayerTurn };
+public enum GameState { dealerTurn, playerTurn, endGame }
 
 public class GameController : MonoBehaviour
 {
-    Card card;
+    public GameState gameState;
+    
+    [Header("UI")]
+        public GameObject hitButton;
+        public GameObject standButton;
+    [Space(10)]
 
-    public List<Card> deck = new List<Card>();
-    public List<Card> dealerHand = new List<Card>();
-    public List<Card> playerHand = new List<Card>();
+    [Header("Cards")]
+        public List<Card> deck = new List<Card>();
+        public List<Card> decks = new List<Card>();
+        public List<Card> dealerHand = new List<Card>();
+        public List<Card> playerHand = new List<Card>();
+
 
     public int dealerHandValue;
     public int playerHandValue;
 
     public void Awake()
     {
-        card = gameObject.GetComponent<Card>();
+        for (int i = 0; i < 4; i++)
+            foreach (Card card in deck)
+                decks.Add(card);
     }
 
     public void Start()
     {
         DrawPlayer(2);
         DrawDealer(2);
+        gameState = GameState.playerTurn;
     }
 
     public void Update()
     {
-        foreach (Card card in dealerHand)
-            card.value += dealerHandValue;
-        
-        foreach (Card card in playerHand)
-            card.value += playerHandValue;
+        if (playerHandValue > 21 || dealerHandValue > 21)
+        {
+            gameState = GameState.endGame;
+        }
 
-        // if (GameState == PlayerTurn)
-        // {
-
-        // }
-        // else
-        // {
-
-        // }
+        if (gameState == GameState.playerTurn)
+        {
+            hitButton.SetActive(true);
+            standButton.SetActive(true);
+        }
+        else if (gameState == GameState.dealerTurn)
+        {
+            hitButton.SetActive(false);
+            standButton.SetActive(false);
+            StartCoroutine(DealerTurn());
+        }
+        else
+        {
+            EndGame();
+        }
     }
 
     public void DrawPlayer(int loop)
     {
         for (int i = 0; i < loop; i++)
         {
-            int randomCardNumber = Random.Range(0, deck.Count);
-            Card randomCard = deck[randomCardNumber];
-            deck.RemoveAt(randomCardNumber);
+            int randomCardNumber = Random.Range(0, decks.Count);
+            Card randomCard = decks[randomCardNumber];
+            decks.RemoveAt(randomCardNumber);
             playerHand.Add(randomCard);
+            playerHandValue += randomCard.value;
         }
     }
 
@@ -60,10 +80,39 @@ public class GameController : MonoBehaviour
     {
         for (int i = 0; i < loop; i++)
         {
-            int randomCardNumber = Random.Range(0, deck.Count);
-            Card randomCard = deck[randomCardNumber];
-            deck.RemoveAt(randomCardNumber);
+            int randomCardNumber = Random.Range(0, decks.Count);
+            Card randomCard = decks[randomCardNumber];
+            decks.RemoveAt(randomCardNumber);
             dealerHand.Add(randomCard);
+            dealerHandValue += randomCard.value;
         }
+    }
+
+    public void PlayerTurnHit()
+    {
+        DrawPlayer(1);
+        gameState = GameState.dealerTurn;
+    }
+
+    public void PlayerTurnStand()
+    {
+        if (dealerHandValue >= 16)
+            gameState = GameState.endGame;
+        else
+            gameState = GameState.dealerTurn;
+    }
+
+    public IEnumerator DealerTurn()
+    {
+        if (dealerHandValue <= 16)
+            DrawDealer(1);
+        yield return new WaitForSeconds(3);
+        gameState = GameState.playerTurn;
+    }
+
+    public void EndGame()
+    {
+        hitButton.SetActive(false);
+        standButton.SetActive(false);
     }
 }

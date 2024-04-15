@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d279f6d8459546945be7d3ed01e83699, type: 3}
   m_Name: Queen Of Spades
   m_EditorClassIdentifier: 
-  value: 12
-  aceValue: 12
+  value: 10
+  aceValue: 10
   cardObject: {fileID: 8999976361405441552, guid: 842336292b3f72141b2584ef40ee202d, type: 3}

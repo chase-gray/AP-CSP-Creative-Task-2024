@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d279f6d8459546945be7d3ed01e83699, type: 3}
   m_Name: Jack Of Spades
   m_EditorClassIdentifier: 
-  value: 11
-  aceValue: 11
+  value: 10
+  aceValue: 10
   cardObject: {fileID: 8197258434396350801, guid: 2ab1df4238789a1448c3eeef833b7f41, type: 3}
