@@ -11,7 +11,6 @@ GameObject:
   - component: {fileID: 7527317462309318469}
   - component: {fileID: 5778605004390692479}
   - component: {fileID: 4870509447854618937}
-  - component: {fileID: -6169890821381399502}
   m_Layer: 0
   m_Name: Queen Of Hearts
   m_TagString: Untagged
@@ -84,17 +83,3 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!114 &-6169890821381399502
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2179264086574243812}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d279f6d8459546945be7d3ed01e83699, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  value: 12
-  aceValue: 12

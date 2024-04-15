@@ -11,7 +11,6 @@ GameObject:
   - component: {fileID: 1220312951145706891}
   - component: {fileID: 91135238002997005}
   - component: {fileID: 8418880230385965194}
-  - component: {fileID: -7194616344868194613}
   m_Layer: 0
   m_Name: Nine Of Hearts
   m_TagString: Untagged
@@ -84,17 +83,3 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!114 &-7194616344868194613
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 966697053428563324}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d279f6d8459546945be7d3ed01e83699, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  value: 9
-  aceValue: 9

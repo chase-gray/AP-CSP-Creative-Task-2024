@@ -11,7 +11,6 @@ GameObject:
   - component: {fileID: 6095995120914443563}
   - component: {fileID: 6677063664913508522}
   - component: {fileID: 5749753776135152063}
-  - component: {fileID: -2292028409037252563}
   m_Layer: 0
   m_Name: Eight Of Diamonds
   m_TagString: Untagged
@@ -84,17 +83,3 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!114 &-2292028409037252563
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3060201077043291018}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d279f6d8459546945be7d3ed01e83699, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  value: 8
-  aceValue: 8

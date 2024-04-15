@@ -11,7 +11,6 @@ GameObject:
   - component: {fileID: 6195754563669797110}
   - component: {fileID: 7395948113922805013}
   - component: {fileID: 4866963723490959783}
-  - component: {fileID: 7244355625000495404}
   m_Layer: 0
   m_Name: Queen Of Diamonds
   m_TagString: Untagged
@@ -84,17 +83,3 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!114 &7244355625000495404
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 9051115009193125432}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d279f6d8459546945be7d3ed01e83699, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  value: 12
-  aceValue: 12

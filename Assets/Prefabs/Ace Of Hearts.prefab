@@ -11,7 +11,6 @@ GameObject:
   - component: {fileID: 1343891501679405797}
   - component: {fileID: 4644139690195741127}
   - component: {fileID: 7520476152259429787}
-  - component: {fileID: -6566822422817554458}
   m_Layer: 0
   m_Name: Ace Of Hearts
   m_TagString: Untagged
@@ -84,17 +83,3 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!114 &-6566822422817554458
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5335504768052397831}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d279f6d8459546945be7d3ed01e83699, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  value: 1
-  aceValue: 11

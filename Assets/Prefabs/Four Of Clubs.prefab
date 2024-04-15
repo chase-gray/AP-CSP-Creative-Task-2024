@@ -11,7 +11,6 @@ GameObject:
   - component: {fileID: 3201026151992138832}
   - component: {fileID: 2784972013027910453}
   - component: {fileID: 1724573641954606246}
-  - component: {fileID: -3754112725086357753}
   m_Layer: 0
   m_Name: Four Of Clubs
   m_TagString: Untagged
@@ -84,19 +83,3 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!114 &-3754112725086357753
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8336438983036339678}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d279f6d8459546945be7d3ed01e83699, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  suite: Clubs
-  face: Four
-  value: 4
-  aceValue: 4
