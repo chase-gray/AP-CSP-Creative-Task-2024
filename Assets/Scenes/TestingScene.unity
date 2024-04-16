@@ -185,7 +185,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7b8e3d4a6ebdb5b4785a714bcf3c6186, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gameState: 0
+  gameState: 2
   hitButton: {fileID: 1948388181}
   standButton: {fileID: 1750178716}
   deck:
@@ -246,6 +246,7 @@ MonoBehaviour:
   playerHand: []
   dealerHandValue: 0
   playerHandValue: 0
+  deckAmount: 4
 --- !u!4 &37831258
 Transform:
   m_ObjectHideFlags: 0
